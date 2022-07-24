@@ -11,9 +11,17 @@ for (let i = 0; i < 50; i++) {
   let sumaDados = dado1 + dado2;
 
   resultadosDados.push(sumaDados);
-  document.write(" ");
+  document.write(` `);
   document.write(`${resultadosDados[i]}`);
-  document.write(" ,");
 }
-
 document.write(`<br>`);
+document.write(`<br>`);
+document.write(`<br>`);
+document.write(`Repeticiones de resultados:`);
+document.write(`<br>`);
+
+/* 
+for (let posiblesResultados = 0; posiblesResultados < resultadosDados.length ; posiblesResultados++) {
+ document.write(`Se repitieron ${}`)
+}
+ */
