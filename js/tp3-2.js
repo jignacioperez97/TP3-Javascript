@@ -30,3 +30,21 @@ document.write(`<br>`);
 document.write(`Tercera ciudad= ${ciudades[2]}`);
 document.write(`<br>`);
 document.write(`Última ciudad= ${ciudades[ciudades.length - 1]}`);
+
+document.write(`<br>`);
+document.write(`<br>`);
+
+ciudades.push("París");
+document.write(`Nueva última ciudad= ${ciudades[ciudades.length - 1]}`);
+document.write(`<br>`);
+
+for (let i = 0; i < ciudades.length; i++) {
+  document.write(ciudades[i]);
+  document.write(" ");
+}
+document.write(`<br>`);
+document.write(`Segunda ciudad= ${ciudades[1]}`);
+document.write(`<br>`);
+
+ciudades.splice(1, 0, "Barcelona");
+document.write(`Nueva segunda ciudad= ${ciudades[1]}`);
