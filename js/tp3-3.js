@@ -17,8 +17,29 @@ for (let i = 0; i < 50; i++) {
 document.write(`<br>`);
 document.write(`<br>`);
 document.write(`<br>`);
-document.write(`Repeticiones de resultados:`);
-document.write(`<br>`);
+
+document.write(`<table>
+<thead> 
+<tr>
+<th>Resultado</th>
+<th>Frecuencia</th>
+</tr>
+</thead>
+<tbody>
+`);
+for (let i = 2; i <= 12; i++) {
+  let contador = 0;
+  document.write(`<tr>`);
+  for (let posicion = 0; posicion < resultadosDados.length; posicion++) {
+    if (i === resultadosDados[posicion]) {
+      contador++;
+    }
+  }
+  document.write(`<td>${i}</td>
+<td>${contador}</td>`);
+  document.write(`</tr>`);
+}
+document.write(`</tbody></table>`);
 
 /* 
 for (let posiblesResultados = 0; posiblesResultados < resultadosDados.length ; posiblesResultados++) {
